@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m " "
+git branch <brach name>
+git remote add origin <https://github.com/Shaik-Saleem283/practice_projects.git>
+git push origin <brach name>
