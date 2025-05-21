@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #4040f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #employeeForm {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      box-sizing: border-box;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #ff001e;
+      color: black;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+  <title>emp registration</title>
+</head>
+<body>
+  <form id="employeeForm">
+    <input type="text" id="empName" placeholder="Full Name" required>
+    <input type="email" id="empEmail" placeholder="Email Address" required>
+    <input type="number" id="empAge" placeholder="Age" required>
+    <select id="empDept" required>
+      <option value="">Select Department</option>
+      <option value="HR">HR</option>
+      <option value="Finance">Finance</option>
+      <option value="Development">Development</option>
+      <option value="Marketing">Marketing</option>
+    </select>
+    <button type="submit" onclick="registration()">Register</button>
+  </form>
+  <p id="output"></p>
+</body>
+<script>
+function registration(){
+  const name= document.getElementById("empName").value;
+  const email= document.getElementById("empEmail").value;
+  const age= document.getElementById("empAge").value;
+
+  if (name.trim() === "") {
+        alert("Please enter a name.");
+        return;
+      }
+  if (email.trim() === "") {
+        alert("Please enter a Email.");
+        return;
+  }
+  if (age.trim() === "") {
+        alert("Please enter a Age.");
+        return;
+  }
+  const message = `Name=${name}, Email=${email},Age=${age}`;
+
+      // Output to the page
+      document.getElementById("output").innerText = message;
+      console.log(message);
+      
+}
+</script>
+</html>

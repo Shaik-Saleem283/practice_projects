@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Storage Demo</title>
+  </head>
+  <body>
+    <h2>Save User</h2>
+    <button onclick="saveUser()">Save User</button>
+    <button onclick="loadUser()">Load User</button>
+    <p id="userInfo"></p>
+    <script>
+      const user = {
+        name: "yash",
+        age: 28,
+        loggedIn: true,
+      };
+      function saveUser() {
+       
+        console.log(typeof JSON.stringify(user))
+        localStorage.setItem("yash", JSON.stringify(user));
+        alert("User saved!");
+      }
+      function loadUser() {
+        const stored = localStorage.getItem("yash");
+         const parsedUser = JSON.parse(stored);
+         document.getElementById("userInfo").innerText = `
+        Name: ${parsedUser.name}, Age: ${parsedUser.age}, Logged In: ${parsedUser.loggedIn}`;
+      }
+    </script>
+  </body>
+</html>

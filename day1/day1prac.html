@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="changeText">cricket</p>
+    <button onclick="enter()">Enter</button>
+    <p id="number">Number</p>
+    <p id="time">Time`</p>
+    <p id="toggle">Hello</p>
+    <button onclick="enter1()">Enter</button>
+</body>
+<script>
+    //✅ Task 1: Show a Popup Alert on Page Load
+    // alertMessege();
+    function alertMessege(){
+        alert("Welcome to our website!");
+    }
+    //✅ Task 2: Log Different Data Types to the Console
+    console.log(typeof "Hello");
+    console.log(typeof 23);
+    let bigNumber=32878728740093092709209092409n;
+    console.log(typeof bigNumber);
+    console.log(typeof true);
+    let a;
+    console.log(typeof a);
+    a=null;
+    console.log(typeof a);
+    let car={mode:"nexa",year:2022};
+    console.log(typeof a);
+    //✅ Task 3: Prompt the User for Their Name and Greet Them
+    let user=prompt("Enter your name");
+    if(user){
+        console.log(`Hello, ${user} welcome to my web page`);
+    }
+    else{
+        console.log(`user didn't enter name`);
+    }
+    //✅ Change Webpage Content with JavaScript
+    enter=function(){
+        document.getElementById("changeText").innerText="Hokey";
+    }
+    //✅ Add Two Numbers from User and Show the Sum
+    // let first=Number(prompt("first number"));
+    // let secound=Number(prompt("secound number"));
+    // console.log("sum of two numbers",first+secound);
+    //✅ Show Whether a Number is Even or Odd
+    // let num=prompt("Enter a number for even or odd")
+    // if(num%2==0){
+    //     document.getElementById("number").innerText=`The number ${num} is even`;
+    // }
+    // else{
+    //     document.getElementById("number").innerText= `The number ${num} is odd`;
+    // }
+    //  ✅ Task 7: Greet User Based on Time of Day
+    // time=()=>{
+    //     const d=new Date();
+    //     let t=d.getHours();
+    //     console.log(`the time : ${t}`);
+    //     if(0<=t && 12>t){
+    //         document.getElementById("time").innerText=`Good Morning, ${user}`;
+    //     }
+    //     else if(12<=t && 16>t){
+    //         document.getElementById("time").innerText=`Good Afternoon, ${user}`;
+    //     }
+    //     else{
+    //         document.getElementById("time").innerText=`Good Evening, ${user}`;
+    //     }
+    // }
+    // time();
+    // ✅ Task 8: Create a Simple Age Checker
+    // let age=Number(prompt("Enter your age"));
+    // if(age<13){
+    //     alert("You are a child.")
+    // }
+    // else if(age>13 && age<19){
+    //     alert("You are a  teenager.")
+    // }
+    // else if(age>24){
+    //     alert("You are a  adult.")
+    // }
+    // else{
+    //     alert("please enter valid number.")
+    // } 
+    // ✅ Task 9: Toggle Text When a Button is Clicked
+    // enter1=function (){
+    //     document.getElementById("toggle").innerText="Goodbye"
+    // }
+    // ✅ Task 10: Simple Temperature Converter (°C to °F)
+    let ctemp=Number(prompt("Enter temperature in Celsius"));
+    let ktemp= (ctemp * (9/5)) + 32;
+    alert(`${ctemp}°C is equal to ${ktemp}°F.`)
+    
+    
+ 
+    
+    
+    
+
+    
+</script>
+</html>

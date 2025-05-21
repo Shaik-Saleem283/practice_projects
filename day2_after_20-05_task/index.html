@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="">
+        <h2>REGISTRATION</h2>
+        <h3>Name</h3>
+        <input type="text" id="name" required placeholder="Full Name">
+        <h3>Email</h3>
+        <input type="email" id="email" required placeholder="Email">
+        <h3>Password</h3>
+        <input type="password" id="password" placeholder="Password">
+        <h3>Confirm Password</h3>
+        <input type="password" id="confirm_password" placeholder="Confirm password">
+        <p id="passerror"></p>
+        <button type="button" onclick="reg()">Registration</button>
+        <button type="button" onclick="window.location.href='login.html'">Login</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
