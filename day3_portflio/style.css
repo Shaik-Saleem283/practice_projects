@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+header{
+    background-color: lightgray;
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 5%;
+    border: 1px solid lightgray;
+    border-radius: 5px 5px 0 0  ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+
+}
+#name{
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#name img{
+    width: 20%;
+    height: 100%;
+    border-radius: 30%;
+}
+#name p{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: white;
+}
+#menu nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+}
+#home{
+    width: 100%;
+    margin-top: 12vh;
+    margin-bottom: 0;
+    height: calc(100vh - 12vh); /* full height minus header */
+    background-image: url('mern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+#homebox{
+    width: 40%;
+    margin: auto;
+    background-color: rgba(253, 250, 250, 0.9);
+    border-radius: 12px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px;
+    /* gap: 20px; */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+     
+    
+}
+#profile_pic{
+    width:200px;
+    height:200px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#profile_pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.65;
+}
+#details {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+    background-color: transparent;
+
+}
+#details h4{
+    margin: 10px 0;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+#details h2 {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    font-weight: lighter;
+    color: purple;
+}
+#details h1 {
+    margin: 5px 0 0 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: purple;
+    /* border: 2px solid black;  */
+}
+
+#details hr {
+  border: none;
+  border-top: 2px solid purple;
+  margin:10px 0 ;
+  width: 50%;
+  color: purple;
+}
+
+#details h3 a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+#aboutMe{
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    background-color: #48377C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-content{
+    width: 90%;
+    height: auto;
+}
+#about-content p:not(#whish){
+    color: white;
+    font-size: 32px;
+    margin: 5px;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+}
+#whish{
+    margin: 0;
+    padding: 0;
+    font-size:20px;
+    font-weight: bold;
+    color: white;
+}
+#skills {
+    background-color: #f5f5f5;
+    padding: 50px 5%;
+    text-align: center;
+    background-image: url('https://th.bing.com/th/id/OIP.VTqqstIIsL7vzTtqLkNY6wHaD1?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    
+}
+#logs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#skill-box {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* optional for readability */
+    padding: 20px;
+    border-radius: 12px;
+    width: 120px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#skills-heading {
+    font-size: 36px;
+    color: white;
+    margin: 20px 0;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+#skill-box img {
+    width: 60px;
+    height: 60px;
+}
+#skill-box p {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+     color: #333;
+}
+footer{
+    width: 100%;
+    background-color: white;
+    padding:100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+#address{
+    width: 40%;
+}
+#get_in{
+    margin: 0;
+    padding: 10px 0 0 0;
+    font-size:17px;
+    font-weight: bold;
+    color: purple;
+}
+#id1{
+    margin-left: 4px;
+    margin-bottom: 10px;
+    padding:  0 5px 2px 0 ;
+    font-size: 40px;
+    color: purple;
+}
+#id2{
+    margin: 0;
+    margin-left: 4px;
+    padding:  0 5px 2px 0 ;
+    font-size: 16px;
+    color: purple;
+    font-family: 'Times New Roman', Times, serif;
+}
+#frm{
+    width:50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#frm input,
+#frm textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: none;
+}
+
+#frm textarea {
+    min-height: 100px;
+}
+
+#frm button {
+    width: 120px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: lighter;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    align-self:flex-end;
+}
+
+#frm button:hover {
+    background-color: #0056b3;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+

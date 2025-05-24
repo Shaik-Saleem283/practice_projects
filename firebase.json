@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "day2_after_20-05_task",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
