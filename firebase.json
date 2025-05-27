@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "day2_after_20-05_task",
+    "public": "day3_portflio",
     "ignore": [
       "firebase.json",
       "**/.*",
